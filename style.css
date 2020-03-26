@@ -1,0 +1,74 @@
+.bz-splash {
+    animation: .2s fadeIn;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.bz-splash > .bz-splash-content {
+    display: table-cell;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+    color: black;
+    font: 60px Arial, Helvetica, Geneva, Sans-serif;
+    text-rendering: optimizeLegibility;
+
+}
+
+.bz-splash-widget {
+    position: relative;
+    z-index: 1;
+}
+
+.bz-splash-widget.bz-splash-clock {
+    padding-bottom: 0vh;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, .5);
+}
+
+.bz-splash-widget.bz-splash-clock h1 + h2 {
+    font-size: 24px;
+}
+
+.bz-splash-widget h1 {
+    display: block;
+    font-size: 2.3em;
+    margin-block-start: 0em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.bz-splash-widget.bz-splash-clock h2 {
+    font-size: 3vw;
+    font-weight: 400;
+    margin: 10px 0 0;
+}
+
+.bz-splash-widget h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin-top: -10 !important;
+}
+
+.bz-splash > .bz-splash-image {
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: opacity .25s;
+    z-index: 0;
+}
